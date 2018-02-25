@@ -9,7 +9,7 @@ permalink:        pretty
 title:            X-Blog
 tagline:          'A personal blog theme'
 description:      'A blog theme built with flexbox.'
-url:              https://berc21.github.io/x-blog/
+url:             'https://x-blog.netlify.com'
 baseurl:          /
 
 permalink: none

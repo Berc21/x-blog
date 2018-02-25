@@ -17,7 +17,7 @@
     "theme_color": "#ffffff",
     "background_color": "#E6ECF0",
     "display": "standalone",
-    "start_url": "/x-blog"
+    "start_url": "."
 }
 
 
