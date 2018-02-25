@@ -1,0 +1,48 @@
+
+// search
+
+.search {
+    flex:  0 0 40%;
+
+    @include media(phone) {
+        display: none;
+       }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: #fff;
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        transition: all 2s;
+        margin-right: -3.25rem;
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: #f0f0f0f0;
+        }
+    }
+    &__button { 
+        background-color: var(--grey-light-2);
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}

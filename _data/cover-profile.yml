@@ -1,0 +1,7 @@
+- name: Jane Doe
+  job-title: Mobile Web Specialist
+  description: Current job, latest graduation or just why you <3 code
+  location: İzmir, Turkey
+  cover_image: cover.png
+  profile_image: portrait-md.png
+  

@@ -1,0 +1,53 @@
+--- 
+layout: default 
+---
+
+<section class="container">
+    
+<!-- {% include social-sidebar.html %} -->
+
+
+  <main class="content">
+    <div class="heading-wrap">
+      <h1 class="content__heading">
+        {{ page.title }}
+      </h1>
+      <span class="content__date">{{ page.date | date_to_string }}</span>
+      <a class="content__tag" href="#">Tag</a>
+    </div>
+
+    {{ content }}
+
+  </main>
+
+  {% include profile-sidebar.html %}
+
+  
+</section>
+
+
+{% include social-share.html %}
+
+
+
+
+
+
+<h3 style="text-align:center;">Related Posts </h3> 
+
+                 
+
+ 
+
+<section class="related-container">
+  
+
+    {% for post in site.related_posts limit:3 %}
+    <div class="related-card">
+      <h1 class="related-card__heading"> {{ post.title }}</h1>
+      <p class="related-card__p"> {{ post.summary }}</p>
+      <a class="related-card__read-more" href="{{ post.url }}">Read More..</a>
+    </div>
+    {% endfor %}
+  </section>
+

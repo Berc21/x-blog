@@ -1,0 +1,15 @@
+- name: facebook
+  img: facebook.svg
+  link: https://www.facebook.com/berkan.cetinkaya.3
+
+- name: linkedin
+  img: linkedin.svg
+  link: https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{site.baseurl}}{{ page.url }}&title={{ page.title }}&summary={{ page.desc }}&source=berkan"
+
+- name: googleplus
+  img: googleplus.svg
+  link: https://plus.google.com/share?url={{ site.url }}{{site.baseurl}}{{ page.url }}
+
+- name: twitter
+  img: twitter.svg
+  link: https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{site.baseurl}}{{ page.url }}

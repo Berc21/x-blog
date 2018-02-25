@@ -1,0 +1,38 @@
+--- 
+layout: default 
+title: Home 
+permalink: /front-end/
+---
+
+<section class="container">
+  
+
+
+        <main class="blog-container">
+      
+          <div class="heading-wrap">
+            <h1 class="content__heading content__heading--blog">
+            {{ page.permalink | slugify | capitalize }}
+            </h1>
+          </div>
+      
+          {% for post in site.categories.Front-end %}
+          <div class="most-recent">
+            <span class="content__date">{{ post.date | date_to_string }}</span>
+            <a class="content__tag" href="#">Tag</a>
+            <h2 class="most-recent__heading">{{ post.title }}</h2>
+            <p class="most-recent__p">
+              {{ post.summary }}
+            </p>
+      
+            <a class="most-recent__read-more" href="{{ post.url }}">Read More</a>
+      
+          </div>
+      
+          {% endfor %}
+      
+      
+        </main>
+      
+        {% include profile-sidebar.html %}
+      </section>

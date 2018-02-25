@@ -1,0 +1,45 @@
+.social-share {
+    max-width: 114rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 0.5rem;
+    
+    &__quote {
+        padding-left: 12.5rem;
+        font-size: 3.5rem;
+        font-weight: 300;
+        font-style: italic;
+        flex: 1;
+        align-self: center;
+        @include media(phone) {
+           text-align: center;
+           font-size: 1.6rem;
+           padding-left: 0;
+        }
+
+    }
+
+    .social-h {
+        list-style: none;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 40rem;
+        // flex: 1; // 0 1 auto
+        justify-content: space-around;
+        display: flex;
+       
+        li {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 4rem;
+            align-self: center;
+        }
+    }
+}

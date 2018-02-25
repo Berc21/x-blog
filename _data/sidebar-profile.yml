@@ -1,0 +1,6 @@
+- name: Jane Doe
+  job-title: Mobile Web Specialist
+  description: Current job, latest graduation or just why you <3 code
+  image: potrait.png
+  link: /about-me
+  

@@ -1,0 +1,35 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            X-Blog
+tagline:          'A personal blog theme'
+description:      'A blog theme built with flexbox.'
+url:              http://localhost:4000.com
+baseurl:          /
+
+permalink: none
+
+author:
+  name:           'Berkan Çetinkaya'
+  url:            https://twitter.com/brkncetinkaya
+
+paginate:         5
+
+plugins:          [jekyll-paginate, jekyll-gist]
+
+sass:
+  sass_dir:          _scss
+  style:            :compressed
+
+collections:
+  _books:
+    output: true
+# Custom vars
+version:          0.0.1
+
+         

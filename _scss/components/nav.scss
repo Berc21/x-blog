@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    
+    border-bottom: 1px solid #999;
+ 
+    @include media(phone) {
+     justify-content: center;
+ }
+    
+    .logo {
+       flex: 1;
+        @include media(phone) {
+         flex: 0 1 8rem;
+         padding: 1rem 2rem;
+         
+     }
+    }
+ 
+ 
+    .input {
+     flex-grow: 0;
+     flex-shrink: 1;
+     flex-basis: 36.5rem;
+     // flex: 1; // 0 1 auto
+     justify-content: space-between;
+    }
+ 
+ }
+ 

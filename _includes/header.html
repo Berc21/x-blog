@@ -1,0 +1,29 @@
+<header>
+        <nav>
+                        {% for logo in site.data.logo %}
+                <a class="logo" href="{{ '/' | relative_url }}">
+                        <picture>
+                                <source  media="(max-width: 465px)" srcset=" {{ '/public/img/logo/' | relative_url }}{{logo.sm}}" alt="Logo">
+                                <img  src="{{ '/public/img/logo/' | relative_url }}{{logo.md}}" alt="Logo">
+                        </picture>
+                </a>       {% endfor %}
+
+              
+
+                <div id="mobile-bar" class="top">
+                        <a class="menu-button"></a>
+                </div>
+
+                <form action="#" class="search">
+                        <input type="text" class="search__input" placeholder="Search">
+                        <button class="search__button">
+                                <img class="search__icon" src="{{'/public/img/share-button.svg' | relative_url }}" alt="">
+                        </button>
+                </form>
+
+               
+        </nav>
+
+        {% include mobile-sidebar.html %}
+
+</header>

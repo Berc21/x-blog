@@ -1,0 +1,32 @@
+<aside class="profile-sidebar">
+
+   
+        <ul class="category-nav" >
+                <li class="category-nav__item">
+                   Categories
+          </li>
+            {% for tag in site.categories %}
+            <li class="category-nav__item">
+                <a href="{{'/' | relative_url }}{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+                <hr>
+            </li>
+            
+            {% endfor %}
+        </ul>
+
+    <br> 
+    {% for profile in site.data.sidebar-profile %}
+    <div class="profile">
+        <img class="profile__img" src="{{'/public/img/sidebar-profile/' | relative_url }}{{profile.image}}" alt="profile image">
+        <h1 class="profile__name">{{profile.name}}</h1>
+        <h4 class="profile__job-title">{{profile.job-title}}</h4>
+        <p class="profile__description"> {{profile.description}}
+        </p>
+        <a class="profile__learn-more" href=" {{'' | relative_url }}{{profile.link}}">More..</a>
+    </div>
+    {% endfor %} {% for footer in site.data.footer %}
+    <footer class="profile-sidebar__footer">
+        {{ footer.description}}
+    </footer>
+    {% endfor %}
+</aside>

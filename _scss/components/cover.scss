@@ -1,0 +1,111 @@
+.cover-container {
+    
+    position: relative;
+    .cover {
+        opacity: 0.3;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 60vh ;
+        width: 100%;
+        &:before {
+            content: "";
+            display: block;
+            padding-bottom: 50%;
+            }
+    }
+    
+
+    .cover-profile {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        max-width: 50rem;
+       
+        margin-left: -25rem;
+
+        
+
+
+        @include media(phone) {
+            left: 0;
+            margin-left: 0;
+            padding: 0.5rem;
+         }
+
+        &__img {
+            margin-top: 6rem;
+            @include media(phone) {
+                margin-top: 2rem;
+            }
+    
+            max-width: 20rem;
+            display: block;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__name {
+            text-align: center;
+            font-size: 4rem;
+            @include media(phone) {
+                font-size: 2rem
+             }
+        }
+        &__job-title {
+            text-align: center;
+            font-size: 1.6rem;
+            @include media(phone) {
+                font-size: 1rem
+             }
+            font-weight: 400;
+            border-bottom: 1px solid #707070;
+        }
+        &__description {
+            font-size: 2.4rem;
+            @include media(phone) {
+                font-size: 1.5rem
+             }
+            
+        }
+  
+     }
+
+     
+     .cover-footer{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        &__localtion {
+            flex: 1;
+            align-self: center;
+            font-size: 1.6rem;
+        }
+        .social-accounts {
+            list-style: none;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 20rem;
+
+            @include media(phone) {
+                flex-basis: 15rem;
+             }
+            // flex: 1; // 0 1 auto
+            justify-content: space-between;
+            display: flex;
+
+            li {
+                flex-grow: 0;
+                flex-shrink: 1;
+                flex-basis: 4rem;
+                align-self: center;
+                @include media(phone) {
+                    flex-basis: 3rem;
+                 }
+            }
+        }
+    }
+    
+    
+}

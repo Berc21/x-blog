@@ -1,0 +1,38 @@
+.sidebar {
+    @include media(phone) {
+        position: fixed;
+        z-index: 10;
+        background-color: #f9f9f9;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+        -webkit-transform: translate(-460px, 0);
+        transform:translate(-460px, 0);
+        display: block;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      display: none;
+      &__profile {
+        padding: 2rem;
+        text-align: center;
+      }
+     
+  }
+  
+  
+  .open {
+    transform: translate(0, 0);
+  }
+  .menu-button {
+
+    @include media(phone) {
+        position: absolute;
+        background: url(../img/burger.svg) center center no-repeat;
+        width: 2.4rem;
+        height: 2.4rem;
+        top: 1.5rem;
+        left: 1.2rem;
+      }
+  }
