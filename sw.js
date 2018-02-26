@@ -7,7 +7,7 @@ var urlsToCache = [];
 
 // Cache assets
 {% for asset in site.static_files %}
-    {% if asset.path contains '/public' or asset.path contains '/public/posts' or asset.extname == '.js' %}
+    {% if asset.path contains '/public/img' or asset.path contains '/public/posts' or asset.extname == '.js' %}
     urlsToCache.push("{{ file.path }}")
     {% endif %}
 {% endfor %}
