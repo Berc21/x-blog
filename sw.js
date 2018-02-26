@@ -23,7 +23,7 @@ var urlsToCache = [];
 {% endfor %}
 
 
-var CACHE_NAME = 'progressive-hyde-cache-v1';
+var CACHE_NAME = 'cache-v2';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
