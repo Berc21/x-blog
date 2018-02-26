@@ -5,6 +5,8 @@ layout: null
 
 var urlsToCache = [];
 
+var CACHE_NAME = 'cache-v2';
+
 // Cache assets
 {% for asset in site.static_files %}
   {% if asset.path contains '/assets/img' or asset.path contains '/assets/css' or asset.path contains 'assets/js' %}
@@ -12,7 +14,9 @@ var urlsToCache = [];
     {% endif %}
 {% endfor %}
 
+// Cache font 
 
+urlsToCache.push('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface');
 
 // Cache posts
 {% for post in site.posts %}
@@ -24,8 +28,6 @@ var urlsToCache = [];
   urlsToCache.push("{{ page.url }}")
 {% endfor %}
 
-
-var CACHE_NAME = 'cache-v2';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(

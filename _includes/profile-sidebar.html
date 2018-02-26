@@ -1,23 +1,21 @@
 <aside class="profile-sidebar">
 
    
-        <ul class="category-nav" >
+        <ul class="category-nav" style="margin-bottom:1rem" >
                 <li class="category-nav__item">
-                   Categories
+                  <h3> Categories </h3> 
           </li>
             {% for tag in site.categories %}
-            <li class="category-nav__item">
+            <li class="category-nav__item" style="font-weight: bold;" >
                 <a href="{{'/' | relative_url }}{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-                <hr>
             </li>
-            
             {% endfor %}
         </ul>
-
-    <br> 
+    
+    
     {% for profile in site.data.sidebar-profile %}
     <div class="profile">
-        <img class="profile__img" src="{{'/public/img/sidebar-profile/' | relative_url }}{{profile.image}}" alt="profile image">
+        <img class="profile__img" src="{{'/assets/img/sidebar-profile/' | relative_url }}{{profile.image}}" alt="profile image">
         <h1 class="profile__name">{{profile.name}}</h1>
         <h4 class="profile__job-title">{{profile.job-title}}</h4>
         <p class="profile__description"> {{profile.description}}
