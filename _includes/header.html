@@ -3,8 +3,8 @@
                         {% for logo in site.data.logo %}
                 <a class="logo" href="{{ '/' | relative_url }}">
                         <picture>
-                                <source  media="(max-width: 465px)" srcset=" {{ '/public/img/logo/' | relative_url }}{{logo.sm}}" alt="Logo">
-                                <img  src="{{ '/public/img/logo/' | relative_url }}{{logo.md}}" alt="Logo">
+                                <source  media="(max-width: 465px)" srcset=" {{ '/assets/img/logo/' | relative_url }}{{logo.sm}}" alt="Logo">
+                                <img  src="{{ '/assets/img/logo/' | relative_url }}{{logo.md}}" alt="Logo">
                         </picture>
                 </a>       {% endfor %}
 
@@ -17,7 +17,7 @@
                 <form action="#" class="search">
                         <input type="text" class="search__input" placeholder="Search">
                         <button class="search__button">
-                                <img class="search__icon" src="{{'/public/img/share-button.svg' | relative_url }}" alt="">
+                                <img class="search__icon" src="{{'/assets/img/share-button.svg' | relative_url }}" alt="">
                         </button>
                 </form>
 

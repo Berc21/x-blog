@@ -1,11 +1,11 @@
 <section class="cover-container">
         {% for profile in site.data.cover-profile %}
-        <img class="cover" src="{{'/public/img/cover-profile/' | relative_url }}{{profile.cover_image}}" alt="cover image">
+        <img class="cover" src="{{'/assets/img/cover-profile/' | relative_url }}{{profile.cover_image}}" alt="cover image">
     
     
         <div class="cover-profile">
     
-            <img class="cover-profile__img" src="{{'/public/img/cover-profile/' | relative_url }}{{profile.profile_image}}" alt="">
+            <img class="cover-profile__img" src="{{'/assets/img/cover-profile/' | relative_url }}{{profile.profile_image}}" alt="">
     
             <h1 class="cover-profile__name">{{profile.name}}</h1>
             <h3 class="cover-profile__job-title">{{profile.job-title}}</h3>
@@ -20,7 +20,7 @@
                             {% for account in site.data.accounts %}
                             <li>
                                 <a target="_blank" rel="noopener" href="{{account.link}}">
-                                    <img src=" {{'/public/img/social-icons/' | relative_url }}{{account.img}}" alt="">
+                                    <img src=" {{'/assets/img/social-icons/' | relative_url }}{{account.img}}" alt="">
                                 </a>
                             </li>
                             {% endfor %}
